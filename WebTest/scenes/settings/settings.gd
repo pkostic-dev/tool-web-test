@@ -58,10 +58,6 @@ func _ready():
 func _process(_delta):
 	if Input.is_action_just_pressed(&"reset"):
 		reset()
-	if Input.is_action_just_pressed(&"zoom_1"):
-		tab_container.current_tab = 0
-	if Input.is_action_just_pressed(&"zoom_2"):
-		tab_container.current_tab = 1
 
 
 func reset():

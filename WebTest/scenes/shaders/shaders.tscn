@@ -1,7 +1,8 @@
-[gd_scene load_steps=22 format=3 uid="uid://b6verfa8xjl4v"]
+[gd_scene load_steps=23 format=3 uid="uid://b6verfa8xjl4v"]
 
 [ext_resource type="Script" path="res://scenes/shaders/shaders.gd" id="1_f1fi4"]
 [ext_resource type="Shader" path="res://shaders/aura.gdshader" id="2_vtv4r"]
+[ext_resource type="StyleBox" uid="uid://v1pgvqqrkx1m" path="res://resources/black_panel.tres" id="2_ya8g1"]
 [ext_resource type="Texture2D" uid="uid://dbqquq6h7aafu" path="res://images/pisilohepunane3.png" id="3_sopuq"]
 [ext_resource type="Shader" path="res://shaders/blur.gdshader" id="4_wbyky"]
 [ext_resource type="Shader" path="res://shaders/dissintegrate.gdshader" id="5_y4xvs"]
@@ -79,149 +80,153 @@ theme_override_constants/margin_bottom = 10
 [node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="FlowContainer" type="GridContainer" parent="MarginContainer/CenterContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/CenterContainer"]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_ya8g1")
+
+[node name="FlowContainer" type="GridContainer" parent="MarginContainer/CenterContainer/PanelContainer"]
 layout_mode = 2
 columns = 3
 
-[node name="Aura" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="Aura" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/Aura"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Aura"]
 material = SubResource("ShaderMaterial_12gpi")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/Aura"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Aura"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Aura"
 horizontal_alignment = 1
 
-[node name="Blur" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="Blur" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/Blur"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Blur"]
 material = SubResource("ShaderMaterial_26rn7")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/Blur"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Blur"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Blur"
 horizontal_alignment = 1
 
-[node name="Dissintegrate" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="Dissintegrate" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/Dissintegrate"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Dissintegrate"]
 material = SubResource("ShaderMaterial_bdjfi")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/Dissintegrate"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Dissintegrate"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Dissintegrate"
 horizontal_alignment = 1
 
-[node name="Fisheye" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="Fisheye" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/Fisheye"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Fisheye"]
 material = SubResource("ShaderMaterial_sxxyp")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/Fisheye"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Fisheye"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Fisheye"
 horizontal_alignment = 1
 
-[node name="Glow" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="Glow" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/Glow"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Glow"]
 material = SubResource("ShaderMaterial_ni0fu")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/Glow"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Glow"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Glow"
 horizontal_alignment = 1
 
-[node name="OffsetShadow" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="OffsetShadow" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/OffsetShadow"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/OffsetShadow"]
 material = SubResource("ShaderMaterial_2sh7k")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/OffsetShadow"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/OffsetShadow"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Offset Shadow"
 horizontal_alignment = 1
 
-[node name="Outline" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="Outline" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/Outline"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Outline"]
 material = SubResource("ShaderMaterial_27kf0")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/Outline"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Outline"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Outline"
 horizontal_alignment = 1
 
-[node name="Silouette" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="Silouette" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/Silouette"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Silouette"]
 material = SubResource("ShaderMaterial_pgvcb")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/Silouette"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/Silouette"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Silouette"
 horizontal_alignment = 1
 
-[node name="DropShadow" type="VBoxContainer" parent="MarginContainer/CenterContainer/FlowContainer"]
+[node name="DropShadow" type="VBoxContainer" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer"]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/FlowContainer/DropShadow"]
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/DropShadow"]
 material = SubResource("ShaderMaterial_s12o3")
 layout_mode = 2
 texture = ExtResource("3_sopuq")
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="MarginContainer/CenterContainer/FlowContainer/DropShadow"]
+[node name="Label" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/FlowContainer/DropShadow"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 14
 text = "Drop Shadow"
@@ -234,5 +239,11 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 shortcut = ExtResource("12_q5mv1")
 text = "Back"
+
+[node name="Shaders" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Shaders"
 
 [connection signal="pressed" from="MarginContainer/Back" to="." method="_on_back_pressed"]

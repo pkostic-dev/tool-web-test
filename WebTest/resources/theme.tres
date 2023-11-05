@@ -1,0 +1,12 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dhsd0ae6n47h0"]
+
+[ext_resource type="StyleBox" uid="uid://coiwfvv45au3o" path="res://resources/line_edit_focus.tres" id="1_xs1xj"]
+[ext_resource type="StyleBox" uid="uid://dn5wky06p805b" path="res://resources/line_edit_normal.tres" id="2_bp6f5"]
+
+[resource]
+LineEdit/styles/focus = ExtResource("1_xs1xj")
+LineEdit/styles/normal = ExtResource("2_bp6f5")
+OptionButton/styles/focus = ExtResource("1_xs1xj")
+OptionButton/styles/hover = ExtResource("1_xs1xj")
+OptionButton/styles/normal = ExtResource("2_bp6f5")
+OptionButton/styles/pressed = ExtResource("2_bp6f5")

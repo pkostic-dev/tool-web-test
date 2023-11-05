@@ -1,0 +1,223 @@
+[gd_scene load_steps=5 format=3 uid="uid://p5qrs63vk0n4"]
+
+[ext_resource type="Script" path="res://scenes/settings/settings.gd" id="1_ia4qq"]
+[ext_resource type="Theme" uid="uid://dhsd0ae6n47h0" path="res://resources/theme.tres" id="2_kfob1"]
+[ext_resource type="Texture2D" uid="uid://du4nsr4krvofr" path="res://images/tick.png" id="3_tfcqm"]
+[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="4_3wh6k"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ia4qq")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Settings" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="TabContainer" type="TabContainer" parent="MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ProjectSettings" type="MarginContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="Columns" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 20
+
+[node name="Labels" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns"]
+layout_mode = 2
+
+[node name="ViewportWidth" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Labels"]
+layout_mode = 2
+text = "display/window/size/viewport_width"
+
+[node name="ViewportHeight" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Labels"]
+layout_mode = 2
+text = "display/window/size/viewport_height"
+
+[node name="Mode" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Labels"]
+layout_mode = 2
+text = "display/window/size/mode"
+
+[node name="StretchMode" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Labels"]
+layout_mode = 2
+text = "display/window/stretch/mode"
+
+[node name="Aspect" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Labels"]
+layout_mode = 2
+text = "display/window/stretch/aspect"
+
+[node name="Scale" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Labels"]
+layout_mode = 2
+text = "display/window/stretch/scale"
+
+[node name="ScaleMode" type="Label" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Labels"]
+layout_mode = 2
+text = "display/window/stretch/scale_mode"
+
+[node name="Settings" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("2_kfob1")
+
+[node name="ViewportWidth" type="LineEdit" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="ViewportHeight" type="LineEdit" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="WindowMode" type="OptionButton" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings"]
+unique_name_in_owner = true
+layout_mode = 2
+item_count = 5
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Minimized"
+popup/item_1/id = 1
+popup/item_1/disabled = true
+popup/item_2/text = "Maximized"
+popup/item_2/id = 2
+popup/item_2/disabled = true
+popup/item_3/text = "Fullscreen"
+popup/item_3/id = 3
+popup/item_4/text = "Exclusive Fullscreen"
+popup/item_4/id = 4
+popup/item_4/disabled = true
+
+[node name="StretchMode" type="OptionButton" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings"]
+unique_name_in_owner = true
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "disabled"
+popup/item_0/id = 0
+popup/item_1/text = "canvas_items"
+popup/item_1/id = 1
+popup/item_2/text = "viewport"
+popup/item_2/id = 2
+
+[node name="Aspect" type="OptionButton" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings"]
+unique_name_in_owner = true
+layout_mode = 2
+item_count = 5
+popup/item_0/text = "ignore"
+popup/item_0/id = 0
+popup/item_1/text = "keep"
+popup/item_1/id = 1
+popup/item_2/text = "keep_width"
+popup/item_2/id = 2
+popup/item_3/text = "keep_height"
+popup/item_3/id = 3
+popup/item_4/text = "expand"
+popup/item_4/id = 4
+
+[node name="Scale" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings"]
+layout_mode = 2
+
+[node name="ScaleRange" type="HSlider" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/Scale"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_icons/tick = ExtResource("3_tfcqm")
+min_value = 1.0
+max_value = 8.0
+value = 1.0
+allow_greater = true
+tick_count = 8
+
+[node name="ScaleValue" type="LineEdit" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/Scale"]
+unique_name_in_owner = true
+layout_mode = 2
+virtual_keyboard_type = 3
+
+[node name="ScaleMode" type="OptionButton" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings"]
+unique_name_in_owner = true
+layout_mode = 2
+item_count = 2
+popup/item_0/text = "fractional"
+popup/item_0/id = 0
+popup/item_1/text = "integer"
+popup/item_1/id = 1
+
+[node name="ReferenceRect" type="ReferenceRect" parent="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns"]
+layout_mode = 2
+
+[node name="ToolSettings" type="MarginContainer" parent="MarginContainer/VBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/TabContainer/ToolSettings"]
+layout_mode = 2
+
+[node name="Columns" type="HBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/ToolSettings/ScrollContainer"]
+layout_mode = 2
+
+[node name="Labels" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/ToolSettings/ScrollContainer/Columns"]
+layout_mode = 2
+
+[node name="Settings" type="VBoxContainer" parent="MarginContainer/VBoxContainer/TabContainer/ToolSettings/ScrollContainer/Columns"]
+layout_mode = 2
+
+[node name="Back" type="Button" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+shortcut = ExtResource("4_3wh6k")
+text = "Back"
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(1, 0.356863, 0.290196, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "Press R to reset these settings."
+
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/ViewportWidth" to="." method="_on_viewport_width_text_submitted"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/ViewportHeight" to="." method="_on_viewport_height_text_submitted"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/WindowMode" to="." method="_on_mode_item_selected"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/StretchMode" to="." method="_on_stretch_mode_item_selected"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/Aspect" to="." method="_on_aspect_item_selected"]
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/Scale/ScaleRange" to="." method="_on_scale_range_value_changed"]
+[connection signal="text_submitted" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/Scale/ScaleValue" to="." method="_on_scale_value_text_submitted"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/TabContainer/ProjectSettings/ScrollContainer/Columns/Settings/ScaleMode" to="." method="_on_scale_mode_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Back" to="." method="_on_back_pressed"]

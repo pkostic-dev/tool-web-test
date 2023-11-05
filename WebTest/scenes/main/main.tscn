@@ -1,0 +1,89 @@
+[gd_scene load_steps=8 format=3 uid="uid://c5ebdpcs87o5h"]
+
+[ext_resource type="Script" path="res://scenes/main/main.gd" id="1_vsmok"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ued06"]
+device = -1
+keycode = 38
+unicode = 38
+
+[sub_resource type="Shortcut" id="Shortcut_sjn54"]
+events = [SubResource("InputEventKey_ued06")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_b8fop"]
+device = -1
+keycode = 50
+unicode = 233
+
+[sub_resource type="Shortcut" id="Shortcut_4165n"]
+events = [SubResource("InputEventKey_b8fop")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_2bxiy"]
+device = -1
+keycode = 34
+unicode = 34
+
+[sub_resource type="Shortcut" id="Shortcut_u0fn3"]
+events = [SubResource("InputEventKey_2bxiy")]
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vsmok")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Main"
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="2DTest" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+shortcut = SubResource("Shortcut_sjn54")
+text = "2D Test"
+
+[node name="3DTest" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+disabled = true
+shortcut = SubResource("Shortcut_4165n")
+text = "3D Test"
+
+[node name="Settings" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+shortcut = SubResource("Shortcut_u0fn3")
+text = "Settings"
+
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/2DTest" to="." method="_on_2d_test_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/3DTest" to="." method="_on_3d_test_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]

@@ -84,10 +84,9 @@ text = "3D Test"
 layout_mode = 2
 text = "Shaders"
 
-[node name="CPUParticles" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
+[node name="GPUParticles" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
-disabled = true
-text = "CPU Particles"
+text = "GPU Particles"
 
 [node name="Settings" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
@@ -97,5 +96,5 @@ text = "Settings"
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/2DTest" to="." method="_on_2d_test_pressed"]
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/3DTest" to="." method="_on_3d_test_pressed"]
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/Shaders" to="." method="_on_shaders_pressed"]
-[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/CPUParticles" to="." method="_on_cpu_particles_pressed"]
+[connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/GPUParticles" to="." method="_on_gpu_particles_pressed"]
 [connection signal="pressed" from="MarginContainer/CenterContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]

@@ -1,2 +1,3 @@
 magecity.png : https://opengameart.org/content/mage-city-arcanos
 pisilohepunane3.png : https://opengameart.org/content/dragons
+earthbound shader : https://godotshaders.com/shader/earthbound-like-battle-background-shader-w-scroll-effect-and-palette-cycling/

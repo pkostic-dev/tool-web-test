@@ -1,35 +1,43 @@
-[gd_scene load_steps=12 format=3 uid="uid://oo2e1k6k84n4"]
+[gd_scene load_steps=10 format=3 uid="uid://oo2e1k6k84n4"]
 
 [ext_resource type="Script" path="res://scenes/scene_3d/3d_test.gd" id="1_bq37j"]
 [ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="2_vuwbf"]
 [ext_resource type="StyleBox" uid="uid://v1pgvqqrkx1m" path="res://resources/black_panel.tres" id="3_m13x3"]
-[ext_resource type="MeshLibrary" uid="uid://ds7i1locg5o02" path="res://resources/graveyard_mesh_library.tres" id="4_qk4yl"]
-[ext_resource type="PackedScene" uid="uid://cjki04uq2u1vt" path="res://models/graveyard_kit/grave.glb" id="5_y6lym"]
-[ext_resource type="PackedScene" uid="uid://ddygb08tmxxs0" path="res://models/graveyard_kit/detail-plate.glb" id="6_b6wy5"]
+[ext_resource type="MeshLibrary" uid="uid://f0dkbvc0mra7" path="res://resources/graveyard_mesh_library.tres" id="4_qk4yl"]
 
-[sub_resource type="PlaneMesh" id="PlaneMesh_pifb8"]
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a0s62"]
+sky_top_color = Color(0.317647, 0.427451, 0.545098, 1)
+sky_horizon_color = Color(0.592157, 0.396078, 0.419608, 1)
+sky_curve = 0.0861524
+ground_bottom_color = Color(0.117647, 0.141176, 0.188235, 1)
+ground_horizon_color = Color(0.27451, 0.196078, 0.192157, 1)
+
+[sub_resource type="Sky" id="Sky_xlk51"]
+sky_material = SubResource("ProceduralSkyMaterial_a0s62")
+
+[sub_resource type="Environment" id="Environment_i6qdr"]
+background_mode = 2
+sky = SubResource("Sky_xlk51")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_obnn3"]
 size = Vector2(100, 100)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b40a2"]
-albedo_color = Color(0.121569, 0.0941176, 0.0745098, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e7yjs"]
+albedo_color = Color(0.364706, 0.286275, 0.235294, 1)
 metallic_specular = 0.0
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dnsuj"]
-sky_top_color = Color(0, 0, 0, 1)
-sky_horizon_color = Color(1, 0.270588, 0.247059, 1)
-ground_bottom_color = Color(0, 0, 0, 1)
-ground_horizon_color = Color(0.701961, 0.196078, 0, 1)
-
-[sub_resource type="Sky" id="Sky_6a7p8"]
-sky_material = SubResource("ProceduralSkyMaterial_dnsuj")
-
-[sub_resource type="Environment" id="Environment_c01bb"]
-background_mode = 2
-sky = SubResource("Sky_6a7p8")
-ambient_light_source = 3
 
 [node name="3DTest" type="Node3D"]
 script = ExtResource("1_bq37j")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_i6qdr")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.639593, -0.51943, -0.566669, -0.765534, 0.497369, 0.408144, 0.0698418, 0.69485, -0.715755, 0.980483, 3.39649, -1.69823)
+light_color = Color(0.470588, 0.666667, 1, 1)
+light_energy = 0.1
+shadow_enabled = true
+directional_shadow_mode = 1
 
 [node name="Menu" type="CanvasLayer" parent="."]
 
@@ -85,32 +93,19 @@ size_flags_vertical = 0
 text = "3D Test"
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 2, 3)
+transform = Transform3D(-0.707107, 0.353553, -0.612372, 0, 0.866025, 0.5, 0.707107, 0.353553, -0.612372, -5.31948, 3.03313, -7.09249)
 
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource("4_qk4yl")
-cell_size = Vector3(1, 1, 1)
+cell_size = Vector3(0.2, 0.2, 0.2)
 cell_center_y = false
 data = {
-"cells": PackedInt32Array(0, 0, 15, 1, 0, 11, 65535, 0, 13, 2, 0, 1441805, 2, 1, 1441807, 65534, 1, 1441807, 65534, 2, 1441807, 65534, 3, 1441807, 2, 2, 1441807)
+"cells": PackedInt32Array(65529, 6, 655378, 393209, 6, 655377, 65518, 65533, 1048598, 393198, 65533, 1048597, 65520, 65533, 1048595, 65529, 1, 655380, 65529, 14, 655368, 65534, 14, 655368, 3, 14, 655368, 8, 14, 655368, 13, 14, 655368, 65524, 14, 655368, 65519, 14, 655368, 18, 14, 1441798, 65514, 14, 655366, 65514, 9, 1048584, 65514, 4, 1048584, 65514, 65535, 1048584, 65514, 65530, 1048584, 65514, 65525, 1048584, 22, 9, 1048584, 22, 4, 1048584, 18, 65535, 5, 13, 65531, 655366, 13, 65526, 1048584, 9, 65521, 6, 4, 65521, 7, 65510, 65520, 1441799, 65515, 65518, 655412, 65520, 65518, 655412, 65525, 65518, 655412, 65530, 65518, 655412, 65535, 65518, 655411, 3, 65522, 1441842, 8, 65527, 1048626, 9, 65526, 1048622, 7, 65522, 47, 131079, 65522, 46, 2, 65518, 1441852, 65513, 65519, 1048636, 65522, 3, 1048634, 2, 65521, 1048638, 65533, 65521, 1048638, 16, 65529, 1048641, 17, 65523, 1048644, 23, 65531, 1048644, 26, 65524, 1048643, 65506, 65523, 1048642, 65503, 65531, 1048644, 65506, 1, 1048641, 65506, 9, 1048643, 65534, 65517, 1048649, 65532, 65514, 1048649, 65533, 65510, 1048649, 65529, 65509, 1048649, 65532, 65506, 1048649, 5, 65516, 1048650, 3, 65514, 1048651, 65534, 13, 76, 65518, 65517, 83, 22, 65519, 82, 30, 65533, 83, 23, 2, 83, 29, 3, 82, 65501, 6, 82, 65508, 65531, 83, 3, 7, 34, 8, 7, 34, 13, 7, 655394, 3, 11, 655395, 8, 11, 655398, 13, 11, 655397, 65529, 5, 655402, 65517, 65529, 31, 65522, 65529, 30, 65527, 65529, 1048607, 65515, 65524, 24, 17, 65535, 25, 15, 2, 24, 18, 3, 13, 65529, 65523, 3, 4, 65527, 1441794, 12, 65534, 1048634)
 }
 metadata/_editor_floor_ = Vector3(0, 0, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("PlaneMesh_pifb8")
-surface_material_override/0 = SubResource("StandardMaterial3D_b40a2")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 5.30257, 0)
-light_color = Color(1, 0.423529, 0.721569, 1)
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_c01bb")
-
-[node name="grave2" parent="." instance=ExtResource("5_y6lym")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
-
-[node name="detail-plate2" parent="." instance=ExtResource("6_b6wy5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0114765, 0, 2.2756)
+mesh = SubResource("PlaneMesh_obnn3")
+surface_material_override/0 = SubResource("StandardMaterial3D_e7yjs")
 
 [connection signal="pressed" from="Menu/MarginContainer/Back" to="." method="_on_back_pressed"]

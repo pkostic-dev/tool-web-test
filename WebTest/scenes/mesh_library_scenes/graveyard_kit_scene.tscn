@@ -1,0 +1,277 @@
+[gd_scene load_steps=92 format=3 uid="uid://0us1x2jhweuc"]
+
+[ext_resource type="PackedScene" uid="uid://c3sp5iokjrr58" path="res://models/graveyard_kit/altar-stone.glb" id="1_fdjy3"]
+[ext_resource type="PackedScene" uid="uid://q5cvebulbwqy" path="res://models/graveyard_kit/altar-wood.glb" id="2_csfdi"]
+[ext_resource type="PackedScene" uid="uid://d0yffbovkd1y5" path="res://models/graveyard_kit/bench-damaged.glb" id="3_2hy24"]
+[ext_resource type="PackedScene" uid="uid://cumgvaaqy68le" path="res://models/graveyard_kit/bench.glb" id="4_q3t6q"]
+[ext_resource type="PackedScene" uid="uid://cafu7g2ypft0i" path="res://models/graveyard_kit/border-pillar.glb" id="5_jwvgk"]
+[ext_resource type="PackedScene" uid="uid://ya1foy6mxvpk" path="res://models/graveyard_kit/brick-wall-curve-small.glb" id="6_tyc4m"]
+[ext_resource type="PackedScene" uid="uid://cj1cx452is0ef" path="res://models/graveyard_kit/brick-wall-curve.glb" id="7_nneqa"]
+[ext_resource type="PackedScene" uid="uid://cmxkpvej64q5y" path="res://models/graveyard_kit/brick-wall-end.glb" id="8_7dvyc"]
+[ext_resource type="PackedScene" uid="uid://d36nyne0w0kk4" path="res://models/graveyard_kit/brick-wall.glb" id="9_xoeoe"]
+[ext_resource type="PackedScene" uid="uid://cnim2ivfgbqn1" path="res://models/graveyard_kit/candle-multiple.glb" id="10_chs68"]
+[ext_resource type="PackedScene" uid="uid://fxj7o3osu37d" path="res://models/graveyard_kit/candle.glb" id="11_w652c"]
+[ext_resource type="PackedScene" uid="uid://cwux5a2bj7grk" path="res://models/graveyard_kit/character-digger.glb" id="12_cmxvn"]
+[ext_resource type="PackedScene" uid="uid://cl31exlxt7yb5" path="res://models/graveyard_kit/character-ghost.glb" id="13_rsab8"]
+[ext_resource type="PackedScene" uid="uid://cfhf0rieq1dc7" path="res://models/graveyard_kit/character-skeleton.glb" id="14_2b3ix"]
+[ext_resource type="PackedScene" uid="uid://cejsauan6rpxx" path="res://models/graveyard_kit/character-vampire.glb" id="15_nien8"]
+[ext_resource type="PackedScene" uid="uid://ccqaopwx4cdka" path="res://models/graveyard_kit/character-zombie.glb" id="16_mcs0p"]
+[ext_resource type="PackedScene" uid="uid://bp04soga1uu8" path="res://models/graveyard_kit/coffin-old.glb" id="17_v8x8m"]
+[ext_resource type="PackedScene" uid="uid://bow8gybwv3qn6" path="res://models/graveyard_kit/coffin.glb" id="18_klij7"]
+[ext_resource type="PackedScene" uid="uid://bds4weuhd7ygw" path="res://models/graveyard_kit/column-large.glb" id="19_yv25h"]
+[ext_resource type="PackedScene" uid="uid://bcapwb57eyf87" path="res://models/graveyard_kit/cross-column.glb" id="20_h6a2o"]
+[ext_resource type="PackedScene" uid="uid://80cx1vg7f05m" path="res://models/graveyard_kit/cross-wood.glb" id="21_pgox5"]
+[ext_resource type="PackedScene" uid="uid://dmp5pdr00dec1" path="res://models/graveyard_kit/cross.glb" id="22_x678l"]
+[ext_resource type="PackedScene" uid="uid://dyqp58kxmt4bt" path="res://models/graveyard_kit/crypt-door.glb" id="23_nyhi4"]
+[ext_resource type="PackedScene" uid="uid://b60yo17eipegi" path="res://models/graveyard_kit/crypt-large-roof.glb" id="24_1lpa5"]
+[ext_resource type="PackedScene" uid="uid://clbj2fnjwyn61" path="res://models/graveyard_kit/crypt-large.glb" id="25_nyiy4"]
+[ext_resource type="PackedScene" uid="uid://2dy2y52q2h1x" path="res://models/graveyard_kit/crypt-small-entrance-alternative.glb" id="26_4h66y"]
+[ext_resource type="PackedScene" uid="uid://go84w4lsh6tt" path="res://models/graveyard_kit/crypt-small-entrance.glb" id="27_1l5a2"]
+[ext_resource type="PackedScene" uid="uid://davelty7odcvs" path="res://models/graveyard_kit/crypt-small-roof.glb" id="28_m27f3"]
+[ext_resource type="PackedScene" uid="uid://b6xaqcsw51fhj" path="res://models/graveyard_kit/crypt-small.glb" id="29_mwyx3"]
+[ext_resource type="PackedScene" uid="uid://dnrvm1py7xlq" path="res://models/graveyard_kit/crypt.glb" id="30_b2avw"]
+[ext_resource type="PackedScene" uid="uid://defy0k3lcasnn" path="res://models/graveyard_kit/debris-wood.glb" id="31_n5b01"]
+[ext_resource type="PackedScene" uid="uid://b1oh60xxhg2w7" path="res://models/graveyard_kit/debris.glb" id="32_ep434"]
+[ext_resource type="PackedScene" uid="uid://bpydmojqeuute" path="res://models/graveyard_kit/detail-bowl.glb" id="33_e1yy8"]
+[ext_resource type="PackedScene" uid="uid://k84074nxv4i4" path="res://models/graveyard_kit/detail-chalice.glb" id="34_7bjcu"]
+[ext_resource type="PackedScene" uid="uid://ddygb08tmxxs0" path="res://models/graveyard_kit/detail-plate.glb" id="35_s46sl"]
+[ext_resource type="PackedScene" uid="uid://dtvvfv2sqgv0a" path="res://models/graveyard_kit/fence-damaged.glb" id="36_2legi"]
+[ext_resource type="PackedScene" uid="uid://dse25hkb8st48" path="res://models/graveyard_kit/fence-gate.glb" id="37_pughl"]
+[ext_resource type="PackedScene" uid="uid://c1btjmh6qsw2n" path="res://models/graveyard_kit/fence.glb" id="38_gk42o"]
+[ext_resource type="PackedScene" uid="uid://bhxu71e0dvmi4" path="res://models/graveyard_kit/fire-basket.glb" id="39_dpd0v"]
+[ext_resource type="PackedScene" uid="uid://cxy0cqaixu140" path="res://models/graveyard_kit/grave-border.glb" id="40_5depc"]
+[ext_resource type="PackedScene" uid="uid://cjki04uq2u1vt" path="res://models/graveyard_kit/grave.glb" id="41_28ux4"]
+[ext_resource type="PackedScene" uid="uid://b23sixd5chut0" path="res://models/graveyard_kit/gravestone-bevel.glb" id="42_rnxcb"]
+[ext_resource type="PackedScene" uid="uid://bfgixvbqyqdxd" path="res://models/graveyard_kit/gravestone-broken.glb" id="43_wb5no"]
+[ext_resource type="PackedScene" uid="uid://d1s06kslvhsj3" path="res://models/graveyard_kit/gravestone-cross-large.glb" id="44_11pt2"]
+[ext_resource type="PackedScene" uid="uid://8l8u2yfr1qbl" path="res://models/graveyard_kit/gravestone-cross.glb" id="45_46c37"]
+[ext_resource type="PackedScene" uid="uid://cmkehcqnag8ka" path="res://models/graveyard_kit/gravestone-debris.glb" id="46_kkpnh"]
+[ext_resource type="PackedScene" uid="uid://cnuysu1avddhj" path="res://models/graveyard_kit/gravestone-decorative.glb" id="47_5jeon"]
+[ext_resource type="PackedScene" uid="uid://dqax0q6vms3pc" path="res://models/graveyard_kit/gravestone-flat-open.glb" id="48_capal"]
+[ext_resource type="PackedScene" uid="uid://b4k6ig1lqqf2x" path="res://models/graveyard_kit/gravestone-flat.glb" id="49_rimm6"]
+[ext_resource type="PackedScene" uid="uid://chj4mu4np2ols" path="res://models/graveyard_kit/gravestone-roof.glb" id="50_7ondu"]
+[ext_resource type="PackedScene" uid="uid://bf8fnjc67udpf" path="res://models/graveyard_kit/gravestone-round.glb" id="51_44n5k"]
+[ext_resource type="PackedScene" uid="uid://faih584i7vm7" path="res://models/graveyard_kit/gravestone-wide.glb" id="52_yp0bb"]
+[ext_resource type="PackedScene" uid="uid://bryu11qn8lw76" path="res://models/graveyard_kit/hay-bale-bundled.glb" id="53_jy6fc"]
+[ext_resource type="PackedScene" uid="uid://c8hefv5qivox0" path="res://models/graveyard_kit/hay-bale.glb" id="54_qvvqb"]
+[ext_resource type="PackedScene" uid="uid://boi45bhgkxwbn" path="res://models/graveyard_kit/iron-fence-bar.glb" id="55_35o5m"]
+[ext_resource type="PackedScene" uid="uid://b8g1gmfmvy6ru" path="res://models/graveyard_kit/iron-fence-border-column.glb" id="56_ej7lo"]
+[ext_resource type="PackedScene" uid="uid://iht5mis7cn86" path="res://models/graveyard_kit/iron-fence-border-curve.glb" id="57_ymubm"]
+[ext_resource type="PackedScene" uid="uid://d12sxi8cqfp2p" path="res://models/graveyard_kit/iron-fence-border-gate.glb" id="58_qgbvc"]
+[ext_resource type="PackedScene" uid="uid://cw0jxbdy6eg8j" path="res://models/graveyard_kit/iron-fence-border.glb" id="59_yxd6e"]
+[ext_resource type="PackedScene" uid="uid://s886fi3tgw6w" path="res://models/graveyard_kit/iron-fence-curve.glb" id="60_v5waa"]
+[ext_resource type="PackedScene" uid="uid://cvr6qvbg2e5cv" path="res://models/graveyard_kit/iron-fence-damaged.glb" id="61_4ay8q"]
+[ext_resource type="PackedScene" uid="uid://b47od7hf3d5jn" path="res://models/graveyard_kit/iron-fence.glb" id="62_21qlx"]
+[ext_resource type="PackedScene" uid="uid://c76hetyewcehr" path="res://models/graveyard_kit/lantern-candle.glb" id="63_ban5a"]
+[ext_resource type="PackedScene" uid="uid://t655m4vrqhax" path="res://models/graveyard_kit/lantern-glass.glb" id="64_frqho"]
+[ext_resource type="PackedScene" uid="uid://bpuhvi6rrjsj7" path="res://models/graveyard_kit/lightpost-all.glb" id="65_wdk6g"]
+[ext_resource type="PackedScene" uid="uid://dvxx4f3aq3buf" path="res://models/graveyard_kit/lightpost-double.glb" id="66_d4wjm"]
+[ext_resource type="PackedScene" uid="uid://cd1ank8xmw4xe" path="res://models/graveyard_kit/lightpost-single.glb" id="67_xdaqj"]
+[ext_resource type="PackedScene" uid="uid://su0wf8175jmp" path="res://models/graveyard_kit/pillar-large.glb" id="68_segxu"]
+[ext_resource type="PackedScene" uid="uid://jqlihwm1r84h" path="res://models/graveyard_kit/pillar-obelisk.glb" id="69_50vyt"]
+[ext_resource type="PackedScene" uid="uid://cuj6n72on77jx" path="res://models/graveyard_kit/pillar-small.glb" id="70_4yj0l"]
+[ext_resource type="PackedScene" uid="uid://br8f3wriu4xyb" path="res://models/graveyard_kit/pillar-square.glb" id="71_s13ft"]
+[ext_resource type="PackedScene" uid="uid://dxx7e62h6lqd2" path="res://models/graveyard_kit/pine-crooked.glb" id="72_0tqag"]
+[ext_resource type="PackedScene" uid="uid://cmma7l0p1gatt" path="res://models/graveyard_kit/pine-fall-crooked.glb" id="73_mjpmi"]
+[ext_resource type="PackedScene" uid="uid://dgd2arckmtmud" path="res://models/graveyard_kit/pine-fall.glb" id="74_gb5wh"]
+[ext_resource type="PackedScene" uid="uid://df7msnmilnd68" path="res://models/graveyard_kit/pine.glb" id="75_sryi2"]
+[ext_resource type="PackedScene" uid="uid://b56a2lppoqhu3" path="res://models/graveyard_kit/pumpkin-carved.glb" id="76_icuuh"]
+[ext_resource type="PackedScene" uid="uid://e6x7igode81n" path="res://models/graveyard_kit/pumpkin-tall-carved.glb" id="77_wqkk7"]
+[ext_resource type="PackedScene" uid="uid://ccs5iapny4knl" path="res://models/graveyard_kit/pumpkin-tall.glb" id="78_7j2hc"]
+[ext_resource type="PackedScene" uid="uid://m3808ce3junb" path="res://models/graveyard_kit/pumpkin.glb" id="79_yvjc8"]
+[ext_resource type="PackedScene" uid="uid://cjqd00ri7i2et" path="res://models/graveyard_kit/road.glb" id="80_w864u"]
+[ext_resource type="PackedScene" uid="uid://cfgmkeew3bww5" path="res://models/graveyard_kit/rocks-tall.glb" id="81_wftcx"]
+[ext_resource type="PackedScene" uid="uid://1xpggsv5regy" path="res://models/graveyard_kit/rocks.glb" id="82_qvu8o"]
+[ext_resource type="PackedScene" uid="uid://bvgkcshe7kf62" path="res://models/graveyard_kit/shovel-dirt.glb" id="83_00hbo"]
+[ext_resource type="PackedScene" uid="uid://j8h5gomry3ef" path="res://models/graveyard_kit/shovel.glb" id="84_puljm"]
+[ext_resource type="PackedScene" uid="uid://2nc6sjpvr7eh" path="res://models/graveyard_kit/stone-wall-column.glb" id="85_a3h0r"]
+[ext_resource type="PackedScene" uid="uid://uj40d5sx4k6j" path="res://models/graveyard_kit/stone-wall-curve.glb" id="86_7adhc"]
+[ext_resource type="PackedScene" uid="uid://cm7rikwnpaaks" path="res://models/graveyard_kit/stone-wall-damaged.glb" id="87_hwhwp"]
+[ext_resource type="PackedScene" uid="uid://dmfq1ytitm10p" path="res://models/graveyard_kit/stone-wall.glb" id="88_elg4e"]
+[ext_resource type="PackedScene" uid="uid://cpsd67jdqitwd" path="res://models/graveyard_kit/trunk-long.glb" id="89_bda6v"]
+[ext_resource type="PackedScene" uid="uid://bu48osmb5ms8e" path="res://models/graveyard_kit/trunk.glb" id="90_bd3b8"]
+[ext_resource type="PackedScene" uid="uid://mg03qhusb2la" path="res://models/graveyard_kit/urn.glb" id="91_5nojx"]
+
+[node name="GraveyardKitScene" type="Node3D"]
+
+[node name="altar-stone2" parent="." instance=ExtResource("1_fdjy3")]
+
+[node name="altar-wood2" parent="." instance=ExtResource("2_csfdi")]
+
+[node name="bench-damaged2" parent="." instance=ExtResource("3_2hy24")]
+
+[node name="bench2" parent="." instance=ExtResource("4_q3t6q")]
+
+[node name="border-pillar2" parent="." instance=ExtResource("5_jwvgk")]
+
+[node name="brick-wall-curve-small2" parent="." instance=ExtResource("6_tyc4m")]
+
+[node name="brick-wall-curve2" parent="." instance=ExtResource("7_nneqa")]
+
+[node name="brick-wall-end2" parent="." instance=ExtResource("8_7dvyc")]
+
+[node name="brick-wall2" parent="." instance=ExtResource("9_xoeoe")]
+
+[node name="candle-multiple2" parent="." instance=ExtResource("10_chs68")]
+
+[node name="candle2" parent="." instance=ExtResource("11_w652c")]
+
+[node name="character-digger2" parent="." instance=ExtResource("12_cmxvn")]
+
+[node name="character-ghost2" parent="." instance=ExtResource("13_rsab8")]
+
+[node name="character-skeleton2" parent="." instance=ExtResource("14_2b3ix")]
+
+[node name="character-vampire2" parent="." instance=ExtResource("15_nien8")]
+
+[node name="character-zombie2" parent="." instance=ExtResource("16_mcs0p")]
+
+[node name="coffin-old2" parent="." instance=ExtResource("17_v8x8m")]
+
+[node name="coffin2" parent="." instance=ExtResource("18_klij7")]
+
+[node name="column-large2" parent="." instance=ExtResource("19_yv25h")]
+
+[node name="cross-column2" parent="." instance=ExtResource("20_h6a2o")]
+
+[node name="cross-wood2" parent="." instance=ExtResource("21_pgox5")]
+
+[node name="cross2" parent="." instance=ExtResource("22_x678l")]
+
+[node name="crypt-door2" parent="." instance=ExtResource("23_nyhi4")]
+
+[node name="crypt-large-roof2" parent="." instance=ExtResource("24_1lpa5")]
+
+[node name="crypt-large2" parent="." instance=ExtResource("25_nyiy4")]
+
+[node name="crypt-small-entrance-alternative2" parent="." instance=ExtResource("26_4h66y")]
+
+[node name="crypt-small-entrance2" parent="." instance=ExtResource("27_1l5a2")]
+
+[node name="crypt-small-roof2" parent="." instance=ExtResource("28_m27f3")]
+
+[node name="crypt-small2" parent="." instance=ExtResource("29_mwyx3")]
+
+[node name="crypt2" parent="." instance=ExtResource("30_b2avw")]
+
+[node name="debris-wood2" parent="." instance=ExtResource("31_n5b01")]
+
+[node name="debris2" parent="." instance=ExtResource("32_ep434")]
+
+[node name="detail-bowl2" parent="." instance=ExtResource("33_e1yy8")]
+
+[node name="detail-chalice2" parent="." instance=ExtResource("34_7bjcu")]
+
+[node name="detail-plate2" parent="." instance=ExtResource("35_s46sl")]
+
+[node name="fence-damaged2" parent="." instance=ExtResource("36_2legi")]
+
+[node name="fence-gate2" parent="." instance=ExtResource("37_pughl")]
+
+[node name="fence2" parent="." instance=ExtResource("38_gk42o")]
+
+[node name="fire-basket2" parent="." instance=ExtResource("39_dpd0v")]
+
+[node name="grave-border2" parent="." instance=ExtResource("40_5depc")]
+
+[node name="grave2" parent="." instance=ExtResource("41_28ux4")]
+
+[node name="gravestone-bevel2" parent="." instance=ExtResource("42_rnxcb")]
+
+[node name="gravestone-broken2" parent="." instance=ExtResource("43_wb5no")]
+
+[node name="gravestone-cross-large2" parent="." instance=ExtResource("44_11pt2")]
+
+[node name="gravestone-cross2" parent="." instance=ExtResource("45_46c37")]
+
+[node name="gravestone-debris2" parent="." instance=ExtResource("46_kkpnh")]
+
+[node name="gravestone-decorative2" parent="." instance=ExtResource("47_5jeon")]
+
+[node name="gravestone-flat-open2" parent="." instance=ExtResource("48_capal")]
+
+[node name="gravestone-flat2" parent="." instance=ExtResource("49_rimm6")]
+
+[node name="gravestone-roof2" parent="." instance=ExtResource("50_7ondu")]
+
+[node name="gravestone-round2" parent="." instance=ExtResource("51_44n5k")]
+
+[node name="gravestone-wide2" parent="." instance=ExtResource("52_yp0bb")]
+
+[node name="hay-bale-bundled2" parent="." instance=ExtResource("53_jy6fc")]
+
+[node name="hay-bale2" parent="." instance=ExtResource("54_qvvqb")]
+
+[node name="iron-fence-bar2" parent="." instance=ExtResource("55_35o5m")]
+
+[node name="iron-fence-border-column2" parent="." instance=ExtResource("56_ej7lo")]
+
+[node name="iron-fence-border-curve2" parent="." instance=ExtResource("57_ymubm")]
+
+[node name="iron-fence-border-gate2" parent="." instance=ExtResource("58_qgbvc")]
+
+[node name="iron-fence-border2" parent="." instance=ExtResource("59_yxd6e")]
+
+[node name="iron-fence-curve2" parent="." instance=ExtResource("60_v5waa")]
+
+[node name="iron-fence-damaged2" parent="." instance=ExtResource("61_4ay8q")]
+
+[node name="iron-fence2" parent="." instance=ExtResource("62_21qlx")]
+
+[node name="lantern-candle2" parent="." instance=ExtResource("63_ban5a")]
+
+[node name="lantern-glass2" parent="." instance=ExtResource("64_frqho")]
+
+[node name="lightpost-all2" parent="." instance=ExtResource("65_wdk6g")]
+
+[node name="lightpost-double2" parent="." instance=ExtResource("66_d4wjm")]
+
+[node name="lightpost-single2" parent="." instance=ExtResource("67_xdaqj")]
+
+[node name="pillar-large2" parent="." instance=ExtResource("68_segxu")]
+
+[node name="pillar-obelisk2" parent="." instance=ExtResource("69_50vyt")]
+
+[node name="pillar-small2" parent="." instance=ExtResource("70_4yj0l")]
+
+[node name="pillar-square2" parent="." instance=ExtResource("71_s13ft")]
+
+[node name="pine-crooked2" parent="." instance=ExtResource("72_0tqag")]
+
+[node name="pine-fall-crooked2" parent="." instance=ExtResource("73_mjpmi")]
+
+[node name="pine-fall2" parent="." instance=ExtResource("74_gb5wh")]
+
+[node name="pine2" parent="." instance=ExtResource("75_sryi2")]
+
+[node name="pumpkin-carved2" parent="." instance=ExtResource("76_icuuh")]
+
+[node name="pumpkin-tall-carved2" parent="." instance=ExtResource("77_wqkk7")]
+
+[node name="pumpkin-tall2" parent="." instance=ExtResource("78_7j2hc")]
+
+[node name="pumpkin2" parent="." instance=ExtResource("79_yvjc8")]
+
+[node name="road2" parent="." instance=ExtResource("80_w864u")]
+
+[node name="rocks-tall2" parent="." instance=ExtResource("81_wftcx")]
+
+[node name="rocks2" parent="." instance=ExtResource("82_qvu8o")]
+
+[node name="shovel-dirt2" parent="." instance=ExtResource("83_00hbo")]
+
+[node name="shovel2" parent="." instance=ExtResource("84_puljm")]
+
+[node name="stone-wall-column2" parent="." instance=ExtResource("85_a3h0r")]
+
+[node name="stone-wall-curve2" parent="." instance=ExtResource("86_7adhc")]
+
+[node name="stone-wall-damaged2" parent="." instance=ExtResource("87_hwhwp")]
+
+[node name="stone-wall2" parent="." instance=ExtResource("88_elg4e")]
+
+[node name="trunk-long2" parent="." instance=ExtResource("89_bda6v")]
+
+[node name="trunk2" parent="." instance=ExtResource("90_bd3b8")]
+
+[node name="urn2" parent="." instance=ExtResource("91_5nojx")]

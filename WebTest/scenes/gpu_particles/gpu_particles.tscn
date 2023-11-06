@@ -1,6 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://mq6d7rp1y17v"]
+[gd_scene load_steps=12 format=3 uid="uid://mq6d7rp1y17v"]
 
+[ext_resource type="Script" path="res://scenes/gpu_particles/gpu_particles.gd" id="1_b5mit"]
 [ext_resource type="Texture2D" uid="uid://w54luqyth0jx" path="res://images/fire_particle.png" id="1_u8omh"]
+[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="3_g2psh"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_04bat"]
 blend_mode = 1
@@ -37,6 +39,7 @@ scale_curve = SubResource("CurveTexture_drbi1")
 color_ramp = SubResource("GradientTexture1D_uiid4")
 
 [node name="GPUParticles" type="Node2D"]
+script = ExtResource("1_b5mit")
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 material = SubResource("CanvasItemMaterial_04bat")
@@ -45,3 +48,32 @@ amount = 32
 process_material = SubResource("ParticleProcessMaterial_lapdt")
 texture = ExtResource("1_u8omh")
 preprocess = 1.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Settings" type="Label" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "GPU Particles"
+
+[node name="Back" type="Button" parent="CanvasLayer/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+shortcut = ExtResource("3_g2psh")
+text = "Back"
+
+[connection signal="pressed" from="CanvasLayer/MarginContainer/Back" to="." method="_on_back_pressed"]

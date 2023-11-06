@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c5ebdpcs87o5h"]
+[gd_scene load_steps=12 format=3 uid="uid://c5ebdpcs87o5h"]
 
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_vsmok"]
 
@@ -18,10 +18,26 @@ unicode = 233
 [sub_resource type="Shortcut" id="Shortcut_4165n"]
 events = [SubResource("InputEventKey_b8fop")]
 
-[sub_resource type="InputEventKey" id="InputEventKey_2bxiy"]
+[sub_resource type="InputEventKey" id="InputEventKey_i8jap"]
 device = -1
 keycode = 34
 unicode = 34
+
+[sub_resource type="Shortcut" id="Shortcut_x4qw2"]
+events = [SubResource("InputEventKey_i8jap")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_m21rk"]
+device = -1
+keycode = 39
+unicode = 39
+
+[sub_resource type="Shortcut" id="Shortcut_v7n0l"]
+events = [SubResource("InputEventKey_m21rk")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_2bxiy"]
+device = -1
+keycode = 40
+unicode = 40
 
 [sub_resource type="Shortcut" id="Shortcut_u0fn3"]
 events = [SubResource("InputEventKey_2bxiy")]
@@ -82,10 +98,12 @@ text = "3D Test"
 
 [node name="Shaders" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = SubResource("Shortcut_x4qw2")
 text = "Shaders"
 
 [node name="GPUParticles" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
+shortcut = SubResource("Shortcut_v7n0l")
 text = "GPU Particles"
 
 [node name="Settings" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]

@@ -96,7 +96,6 @@ text = "2D Test"
 
 [node name="3DTest" type="Button" parent="MarginContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
-disabled = true
 shortcut = SubResource("Shortcut_4165n")
 text = "3D Test"
 

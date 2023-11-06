@@ -1,0 +1,64 @@
+[gd_scene load_steps=21 format=3 uid="uid://dvs0hp5xub0rm"]
+
+[ext_resource type="PackedScene" uid="uid://cafu7g2ypft0i" path="res://models/graveyard_kit/border-pillar.glb" id="1_amnbv"]
+[ext_resource type="PackedScene" uid="uid://ya1foy6mxvpk" path="res://models/graveyard_kit/brick-wall-curve-small.glb" id="2_m8nun"]
+[ext_resource type="PackedScene" uid="uid://cj1cx452is0ef" path="res://models/graveyard_kit/brick-wall-curve.glb" id="3_jha1h"]
+[ext_resource type="PackedScene" uid="uid://cmxkpvej64q5y" path="res://models/graveyard_kit/brick-wall-end.glb" id="4_8s652"]
+[ext_resource type="PackedScene" uid="uid://d36nyne0w0kk4" path="res://models/graveyard_kit/brick-wall.glb" id="5_q5bsn"]
+[ext_resource type="PackedScene" uid="uid://dtvvfv2sqgv0a" path="res://models/graveyard_kit/fence-damaged.glb" id="6_pjv04"]
+[ext_resource type="PackedScene" uid="uid://dse25hkb8st48" path="res://models/graveyard_kit/fence-gate.glb" id="7_1kwea"]
+[ext_resource type="PackedScene" uid="uid://c1btjmh6qsw2n" path="res://models/graveyard_kit/fence.glb" id="8_r6m14"]
+[ext_resource type="PackedScene" uid="uid://boi45bhgkxwbn" path="res://models/graveyard_kit/iron-fence-bar.glb" id="9_gopds"]
+[ext_resource type="PackedScene" uid="uid://b8g1gmfmvy6ru" path="res://models/graveyard_kit/iron-fence-border-column.glb" id="10_fhtvi"]
+[ext_resource type="PackedScene" uid="uid://iht5mis7cn86" path="res://models/graveyard_kit/iron-fence-border-curve.glb" id="11_7vh0j"]
+[ext_resource type="PackedScene" uid="uid://d12sxi8cqfp2p" path="res://models/graveyard_kit/iron-fence-border-gate.glb" id="12_em7f7"]
+[ext_resource type="PackedScene" uid="uid://cw0jxbdy6eg8j" path="res://models/graveyard_kit/iron-fence-border.glb" id="13_jnyuj"]
+[ext_resource type="PackedScene" uid="uid://s886fi3tgw6w" path="res://models/graveyard_kit/iron-fence-curve.glb" id="14_ib7r8"]
+[ext_resource type="PackedScene" uid="uid://cvr6qvbg2e5cv" path="res://models/graveyard_kit/iron-fence-damaged.glb" id="15_1ofy0"]
+[ext_resource type="PackedScene" uid="uid://b47od7hf3d5jn" path="res://models/graveyard_kit/iron-fence.glb" id="16_6hg03"]
+[ext_resource type="PackedScene" uid="uid://2nc6sjpvr7eh" path="res://models/graveyard_kit/stone-wall-column.glb" id="17_q78r7"]
+[ext_resource type="PackedScene" uid="uid://uj40d5sx4k6j" path="res://models/graveyard_kit/stone-wall-curve.glb" id="18_kv0ip"]
+[ext_resource type="PackedScene" uid="uid://cm7rikwnpaaks" path="res://models/graveyard_kit/stone-wall-damaged.glb" id="19_wtr27"]
+[ext_resource type="PackedScene" uid="uid://dmfq1ytitm10p" path="res://models/graveyard_kit/stone-wall.glb" id="20_nnkbi"]
+
+[node name="MeshLibraryScene" type="Node3D"]
+
+[node name="border-pillar2" parent="." instance=ExtResource("1_amnbv")]
+
+[node name="brick-wall-curve-small2" parent="." instance=ExtResource("2_m8nun")]
+
+[node name="brick-wall-curve2" parent="." instance=ExtResource("3_jha1h")]
+
+[node name="brick-wall-end2" parent="." instance=ExtResource("4_8s652")]
+
+[node name="brick-wall2" parent="." instance=ExtResource("5_q5bsn")]
+
+[node name="fence-damaged2" parent="." instance=ExtResource("6_pjv04")]
+
+[node name="fence-gate2" parent="." instance=ExtResource("7_1kwea")]
+
+[node name="fence2" parent="." instance=ExtResource("8_r6m14")]
+
+[node name="iron-fence-bar2" parent="." instance=ExtResource("9_gopds")]
+
+[node name="iron-fence-border-column2" parent="." instance=ExtResource("10_fhtvi")]
+
+[node name="iron-fence-border-curve2" parent="." instance=ExtResource("11_7vh0j")]
+
+[node name="iron-fence-border-gate2" parent="." instance=ExtResource("12_em7f7")]
+
+[node name="iron-fence-border2" parent="." instance=ExtResource("13_jnyuj")]
+
+[node name="iron-fence-curve2" parent="." instance=ExtResource("14_ib7r8")]
+
+[node name="iron-fence-damaged2" parent="." instance=ExtResource("15_1ofy0")]
+
+[node name="iron-fence2" parent="." instance=ExtResource("16_6hg03")]
+
+[node name="stone-wall-column2" parent="." instance=ExtResource("17_q78r7")]
+
+[node name="stone-wall-curve2" parent="." instance=ExtResource("18_kv0ip")]
+
+[node name="stone-wall-damaged2" parent="." instance=ExtResource("19_wtr27")]
+
+[node name="stone-wall2" parent="." instance=ExtResource("20_nnkbi")]

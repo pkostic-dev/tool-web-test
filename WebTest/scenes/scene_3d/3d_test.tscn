@@ -1,3 +1,116 @@
-[gd_scene format=3 uid="uid://oo2e1k6k84n4"]
+[gd_scene load_steps=12 format=3 uid="uid://oo2e1k6k84n4"]
+
+[ext_resource type="Script" path="res://scenes/scene_3d/3d_test.gd" id="1_bq37j"]
+[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="2_vuwbf"]
+[ext_resource type="StyleBox" uid="uid://v1pgvqqrkx1m" path="res://resources/black_panel.tres" id="3_m13x3"]
+[ext_resource type="MeshLibrary" uid="uid://ds7i1locg5o02" path="res://resources/graveyard_mesh_library.tres" id="4_qk4yl"]
+[ext_resource type="PackedScene" uid="uid://cjki04uq2u1vt" path="res://models/graveyard_kit/grave.glb" id="5_y6lym"]
+[ext_resource type="PackedScene" uid="uid://ddygb08tmxxs0" path="res://models/graveyard_kit/detail-plate.glb" id="6_b6wy5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_pifb8"]
+size = Vector2(100, 100)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b40a2"]
+albedo_color = Color(0.121569, 0.0941176, 0.0745098, 1)
+metallic_specular = 0.0
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dnsuj"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(1, 0.270588, 0.247059, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0.701961, 0.196078, 0, 1)
+
+[sub_resource type="Sky" id="Sky_6a7p8"]
+sky_material = SubResource("ProceduralSkyMaterial_dnsuj")
+
+[sub_resource type="Environment" id="Environment_c01bb"]
+background_mode = 2
+sky = SubResource("Sky_6a7p8")
+ambient_light_source = 3
 
 [node name="3DTest" type="Node3D"]
+script = ExtResource("1_bq37j")
+
+[node name="Menu" type="CanvasLayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Back" type="Button" parent="Menu/MarginContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+shortcut = ExtResource("2_vuwbf")
+text = "Back"
+
+[node name="Controls" type="RichTextLabel" parent="Menu/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("3_m13x3")
+bbcode_enabled = true
+text = "[right][b]Controls[/b]
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="CameraInfo" type="RichTextLabel" parent="Menu/MarginContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 20)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_styles/normal = ExtResource("3_m13x3")
+text = "test
+test"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+
+[node name="Label" type="Label" parent="Menu/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "3D Test"
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 2, 3)
+
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("4_qk4yl")
+cell_size = Vector3(1, 1, 1)
+cell_center_y = false
+data = {
+"cells": PackedInt32Array(0, 0, 15, 1, 0, 11, 65535, 0, 13, 2, 0, 1441805, 2, 1, 1441807, 65534, 1, 1441807, 65534, 2, 1441807, 65534, 3, 1441807, 2, 2, 1441807)
+}
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_pifb8")
+surface_material_override/0 = SubResource("StandardMaterial3D_b40a2")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 0, 5.30257, 0)
+light_color = Color(1, 0.423529, 0.721569, 1)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_c01bb")
+
+[node name="grave2" parent="." instance=ExtResource("5_y6lym")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+
+[node name="detail-plate2" parent="." instance=ExtResource("6_b6wy5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0114765, 0, 2.2756)
+
+[connection signal="pressed" from="Menu/MarginContainer/Back" to="." method="_on_back_pressed"]

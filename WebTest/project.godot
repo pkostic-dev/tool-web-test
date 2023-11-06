@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="Web Test"
+config/tags=PackedStringArray("tool", "web")
 run/main_scene="res://scenes/main/main.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://images/mechanic_rat_cut.png"
 
 [display]
 

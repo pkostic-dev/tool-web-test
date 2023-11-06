@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://c5ebdpcs87o5h"]
+[gd_scene load_steps=13 format=3 uid="uid://c5ebdpcs87o5h"]
 
 [ext_resource type="Script" path="res://scenes/main/main.gd" id="1_vsmok"]
+[ext_resource type="PackedScene" uid="uid://dln02b3s5dgp0" path="res://scenes/background/background.tscn" id="2_bdac0"]
 
 [sub_resource type="InputEventKey" id="InputEventKey_ued06"]
 device = -1
@@ -50,6 +51,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vsmok")
+
+[node name="Background" parent="." instance=ExtResource("2_bdac0")]
+layout_mode = 1
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

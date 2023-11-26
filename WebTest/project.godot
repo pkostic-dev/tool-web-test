@@ -20,6 +20,7 @@ config/icon="res://images/mechanic_rat_cut.png"
 
 window/size/viewport_width=640
 window/size/viewport_height=360
+window/size/borderless=true
 window/stretch/scale_mode="integer"
 
 [input]

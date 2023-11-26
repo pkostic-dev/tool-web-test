@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://lhbk085f0i6x"]
+
+[ext_resource type="Shader" path="res://shaders/dissintegrate.gdshader" id="1_glt7d"]
+
+[resource]
+shader = ExtResource("1_glt7d")
+shader_parameter/amount = 1.0

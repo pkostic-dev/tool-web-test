@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://scenes/scene_2d/2d_test.gd" id="1_b3tb6"]
 [ext_resource type="Script" path="res://scenes/scene_2d/camera_2d.gd" id="1_tt0a0"]
-[ext_resource type="TileSet" uid="uid://dt27fvaeaksuh" path="res://resources/magecity_tile_set.tres" id="2_asdvs"]
-[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="4_ksx2g"]
-[ext_resource type="StyleBox" uid="uid://v1pgvqqrkx1m" path="res://resources/black_panel.tres" id="5_xn612"]
+[ext_resource type="TileSet" uid="uid://dt27fvaeaksuh" path="res://resources/tile_set/magecity_tile_set.tres" id="2_asdvs"]
+[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/shortcut/back_shortcut.tres" id="4_ksx2g"]
+[ext_resource type="StyleBox" uid="uid://v1pgvqqrkx1m" path="res://resources/theme/style_box_flat/black_panel.tres" id="5_xn612"]
 
 [node name="2DTest" type="Node2D"]
 script = ExtResource("1_b3tb6")

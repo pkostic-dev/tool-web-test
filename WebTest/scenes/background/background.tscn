@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dln02b3s5dgp0"]
 
-[ext_resource type="Shader" path="res://scenes/background/scroll.gdshader" id="1_h20sw"]
+[ext_resource type="Shader" path="res://shaders/background.gdshader" id="1_h20sw"]
 [ext_resource type="Texture2D" uid="uid://bywhq61ttu4cv" path="res://images/mechanic_rat.png" id="2_5v3lv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ywwle"]

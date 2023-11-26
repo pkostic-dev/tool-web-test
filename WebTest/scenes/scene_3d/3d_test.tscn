@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://oo2e1k6k84n4"]
 
 [ext_resource type="Script" path="res://scenes/scene_3d/3d_test.gd" id="1_bq37j"]
-[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="2_vuwbf"]
-[ext_resource type="StyleBox" uid="uid://v1pgvqqrkx1m" path="res://resources/black_panel.tres" id="3_m13x3"]
-[ext_resource type="MeshLibrary" uid="uid://f0dkbvc0mra7" path="res://resources/graveyard_mesh_library.tres" id="4_qk4yl"]
+[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/shortcut/back_shortcut.tres" id="2_vuwbf"]
+[ext_resource type="StyleBox" uid="uid://v1pgvqqrkx1m" path="res://resources/theme/style_box_flat/black_panel.tres" id="3_m13x3"]
+[ext_resource type="MeshLibrary" uid="uid://f0dkbvc0mra7" path="res://resources/mesh_library/graveyard_mesh_library.tres" id="4_qk4yl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_a0s62"]
 sky_top_color = Color(0.317647, 0.427451, 0.545098, 1)

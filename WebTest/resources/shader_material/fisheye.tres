@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://ti3igq5o2705"]
+
+[ext_resource type="Shader" path="res://shaders/fatty.gdshader" id="1_rxmlq"]
+
+[resource]
+shader = ExtResource("1_rxmlq")
+shader_parameter/fattyness = 1.3

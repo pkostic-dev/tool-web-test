@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://w5i2mafmyay2"]
+
+[ext_resource type="Shader" path="res://shaders/silouette.gdshader" id="1_lywpw"]
+
+[resource]
+shader = ExtResource("1_lywpw")
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/active = true

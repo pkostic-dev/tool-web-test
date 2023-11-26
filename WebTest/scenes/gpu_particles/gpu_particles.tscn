@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/gpu_particles/gpu_particles.gd" id="1_b5mit"]
 [ext_resource type="Texture2D" uid="uid://w54luqyth0jx" path="res://images/fire_particle.png" id="1_u8omh"]
-[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="3_g2psh"]
+[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/shortcut/back_shortcut.tres" id="3_g2psh"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_04bat"]
 blend_mode = 1

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ShaderMaterialList" load_steps=11 format=3 uid="uid://vmr45pmdlpyc"]
+
+[ext_resource type="Script" path="res://resources/class/shader_material_list.gd" id="1_0cae1"]
+[ext_resource type="Material" uid="uid://dxai4ao6ii8wf" path="res://resources/shader_material/aura.tres" id="2_yktj6"]
+[ext_resource type="Material" uid="uid://bw2yfhvbtkp0q" path="res://resources/shader_material/blur.tres" id="3_qja05"]
+[ext_resource type="Material" uid="uid://lhbk085f0i6x" path="res://resources/shader_material/dissintegrate.tres" id="4_uecgu"]
+[ext_resource type="Material" uid="uid://bw5h4v21esbek" path="res://resources/shader_material/drop_shadow.tres" id="5_vpow5"]
+[ext_resource type="Material" uid="uid://ti3igq5o2705" path="res://resources/shader_material/fisheye.tres" id="6_5iywh"]
+[ext_resource type="Material" uid="uid://drhlyq8y68814" path="res://resources/shader_material/glow.tres" id="7_3wqie"]
+[ext_resource type="Material" uid="uid://b2hdibmewsoqj" path="res://resources/shader_material/offset_shadow.tres" id="8_g47sg"]
+[ext_resource type="Material" uid="uid://vkjycfa1xrqh" path="res://resources/shader_material/outline.tres" id="9_xxseo"]
+[ext_resource type="Material" uid="uid://w5i2mafmyay2" path="res://resources/shader_material/silouette.tres" id="10_2lvyf"]
+
+[resource]
+script = ExtResource("1_0cae1")
+shader_material_list = Array[ShaderMaterial]([ExtResource("2_yktj6"), ExtResource("3_qja05"), ExtResource("4_uecgu"), ExtResource("5_vpow5"), ExtResource("6_5iywh"), ExtResource("7_3wqie"), ExtResource("8_g47sg"), ExtResource("9_xxseo"), ExtResource("10_2lvyf")])

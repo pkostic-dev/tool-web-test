@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://p5qrs63vk0n4"]
 
 [ext_resource type="Script" path="res://scenes/settings/settings.gd" id="1_ia4qq"]
-[ext_resource type="Theme" uid="uid://dhsd0ae6n47h0" path="res://resources/theme.tres" id="2_kfob1"]
+[ext_resource type="Theme" uid="uid://dhsd0ae6n47h0" path="res://resources/theme/theme.tres" id="2_kfob1"]
 [ext_resource type="PackedScene" uid="uid://dln02b3s5dgp0" path="res://scenes/background/background.tscn" id="2_owxej"]
 [ext_resource type="Texture2D" uid="uid://du4nsr4krvofr" path="res://images/tick.png" id="3_tfcqm"]
-[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/back_shortcut.tres" id="4_3wh6k"]
+[ext_resource type="Shortcut" uid="uid://ck38hryheyrjn" path="res://resources/shortcut/back_shortcut.tres" id="4_3wh6k"]
 
 [node name="Settings" type="Control"]
 layout_mode = 3

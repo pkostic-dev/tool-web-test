@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://drhlyq8y68814"]
+
+[ext_resource type="Shader" path="res://shaders/glow.gdshader" id="1_6g01n"]
+
+[resource]
+shader = ExtResource("1_6g01n")
+shader_parameter/radius = 2.0
+shader_parameter/amount = 2.0

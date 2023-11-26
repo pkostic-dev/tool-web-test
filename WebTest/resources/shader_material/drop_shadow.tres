@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bw5h4v21esbek"]
+
+[ext_resource type="Shader" path="res://shaders/dropshadow.gdshader" id="1_yw8ir"]
+
+[resource]
+shader = ExtResource("1_yw8ir")
+shader_parameter/radius = 2.0
+shader_parameter/modulate = null

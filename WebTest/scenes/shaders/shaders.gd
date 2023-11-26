@@ -22,7 +22,7 @@ func _ready():
 			await get_tree().create_timer(0.01).timeout
 			print("Done")
 			shader_progress_bar.value += step
-			print(shader_progress_bar.value + " %")
+			print(str(shader_progress_bar.value) + " %")
 
 
 func load_shader(shader_material:ShaderMaterial):
